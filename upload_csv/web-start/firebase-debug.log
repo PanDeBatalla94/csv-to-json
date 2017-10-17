@@ -1,0 +1,36 @@
+[debug] [2017-10-16T23:30:47.309Z] ----------------------------------------------------------------------
+[debug] [2017-10-16T23:30:47.311Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MCanqui\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-10-16T23:30:47.311Z] CLI Version:   3.13.1
+[debug] [2017-10-16T23:30:47.312Z] Platform:      win32
+[debug] [2017-10-16T23:30:47.312Z] Node Version:  v6.11.2
+[debug] [2017-10-16T23:30:47.312Z] Time:          Mon Oct 16 2017 19:30:47 GMT-0400 (Hora estándar oeste, Sudamérica)
+[debug] [2017-10-16T23:30:47.313Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-16T23:30:47.324Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-16T23:30:47.324Z] > authorizing via signed-in user
+[debug] [2017-10-16T23:30:47.326Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-16T23:30:47.326Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/wGgeNxCtoF1LiB3Cx-MKKjiRvNZjDp_bJRl7KlPajnM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Oct 16 2017 19:30:47 GMT-0400 (Hora estándar oeste, Sudamérica)
+[debug] [2017-10-16T23:30:51.857Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-16T23:30:51.932Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pruebas-csv  
+ Mon Oct 16 2017 19:30:51 GMT-0400 (Hora estándar oeste, Sudamérica)
+[debug] [2017-10-16T23:30:53.528Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-16T23:30:53.544Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pruebas-csv/tokens  
+ Mon Oct 16 2017 19:30:53 GMT-0400 (Hora estándar oeste, Sudamérica)
+[debug] [2017-10-16T23:30:56.813Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\xampp\htdocs\upload_csv\web-start'...
+[info] 
+[debug] [2017-10-16T23:30:56.829Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/pruebas-csv  
+ Mon Oct 16 2017 19:30:56 GMT-0400 (Hora estándar oeste, Sudamérica)
+[debug] [2017-10-16T23:30:57.956Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-16T23:30:57.956Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/597256255260/clients/_:getWebAppConfig  
+ Mon Oct 16 2017 19:30:57 GMT-0400 (Hora estándar oeste, Sudamérica)
+[debug] [2017-10-16T23:30:59.082Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] +  hosting: Local server: http://localhost:5000
+
