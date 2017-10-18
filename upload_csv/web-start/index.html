@@ -14,27 +14,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Learn how to use the Firebase platform on the Web">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title></title>
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
+
 
   <!-- Web Application Manifest -->
   <link rel="manifest" href="manifest.json">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Friendly Chat">
-  <meta name="theme-color" content="#303F9F">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Friendly Chat">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
 
   <!-- Tile icon for Win8 -->
   <meta name="msapplication-TileColor" content="#3372DF">
@@ -42,19 +30,16 @@
 
   <!-- Material Design Lite -->
   <link rel="stylesheet" href="/upload_csv/web-start/styles/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/upload_csv/web-start/styles/bootstrap/js/bootstrap.min.js">
+  <script src="/upload_csv/web-start/styles/bootstrap/js/jquery-3.2.1.min.js"></script>
+  <script src="/upload_csv/web-start/styles/bootstrap/js/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+  <script type="text/javascript">
+     $(document).ready(function() {
+      obtener_nodos();
+    })
+  </script>
 
-
-
- <!-- librerias -->
-
-
-<script src="scripts/main.js"></script>
-<script src="scripts/d3.js"></script>
-<script src="scripts/d3.min.js"></script>
- <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
-
-  
 </head>
 <body>
 <div class="container">
@@ -71,36 +56,45 @@
 
       <!-- Messages container -->
       <div id="messages-card" >
-        <div class="row" style="margin-top: 50;"></div>
+        <div class="row" ></div>
         <div class="col-offset-sm-2 col-sm-5">
           
-          <form id="message-form" action="../upload_csv/web-start/subir_archivo.php" enctype="multipart/form-data">
+          <form id="message-form" action="subir_archivo.php" enctype="multipart/form-data"  method="post" accept-charset="utf-8"  >
             <div  class="form-group">
               <label for="exampleInputEmail1">Nuevo nodo:</label>
-              <input class="form-control" type="text" id="nomb_tabla" placeholder="nombre nodo" class="col-sm-5">
+              <input class="form-control" type="text" id="nomb_tabla" name="nomb_tabla" placeholder="nombre nodo" class="col-sm-5" required="">
  
             </div>
             <div   class="form-group">
               Archivo csv:
-              <input class="form-control" type="file" name="fileToUpload" accept="csv" class="btn btn-default" >
+              <input class="form-control" type="file" name="fileToUpload"  class="btn btn-default" >
 
 
             </div>
             <div   class="form-group">
               
-              <button class="form-control btn btn-primary" type="submit" onclick="convertir_csv();" class="col-sm-3">
+              <button class="form-control btn btn-primary" type="submit"   class="col-sm-3" >
                 Generar
              </button>
             </div>
            
           </form>
+
+        <div>
+          
+        </div>
         
         </div>
-      </div>
-
-      
+</div>
 
     </div>
+
+
+  <div id="listaNodos" role="tablist" aria-multiselectable="true">
+
+    
+
+</div>
 
 
 
